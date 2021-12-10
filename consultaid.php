@@ -77,7 +77,7 @@ a:hover, a:active {
 <?php
     include 'conexion.php';
     
-    $sku=$_POST['id'];
+    $sku=$_POST['rfc'];
 
  ?>
          
@@ -102,7 +102,7 @@ a:hover, a:active {
 
              <?php 
              $conexion= new mysqli('localhost','root','','bdwebbb');
-             $consulta="SELECT * FROM datos WHERE id ='$sku'";
+             $consulta="SELECT * FROM datos WHERE rfc ='$sku'";
            
              $resultado=mysqli_query($conexion, $consulta);
             
@@ -124,10 +124,9 @@ a:hover, a:active {
                       
 <a class="btn btn-primary" href="editar.php?id=<?php echo $row['id']?>">
 <i class="fa fa-pencil fa-lg" aria-hidden="true">Modificar</i></a>
-	</td>
-	<td>
+	
 <a class="btn btn-primary" href="eliminar_prod.php?id=<?php echo $row['id']?>">
-<i class="fa fa-pencil fa-lg" aria-hidden="true">Borrar</i></a>
+<i class="fa fa-pencil fa-lg" aria-hidden="true">Borrar  </i></a>
         </td>
         </tr>   
     <?php } ?>   
