@@ -1,6 +1,7 @@
 <?php
 
 $fecha = $_POST  ['fecha' ];
+$rfc = $_POST  ['rfc' ];
 $hora = $_POST  ['hora' ];
 $nombre = $_POST  ['nombre' ];
 $correo = $_POST  ['correo' ];
@@ -16,9 +17,9 @@ if($conexion->connect_error){
  die("Error de conexion".$conexion->connect_error);
 
 } else{
-  $sql = "INSERT INTO datos (fecha,hora,nombre,correo,direccion,ciudad,telefono,tramite) VALUES('".$fecha."','".$hora."','".$nombre."','".$correo."','".$direccion."','".$ciudad."','".$telefono."','".$tramite."');";
+  $sql = "INSERT INTO datos (fecha,rfc,hora,nombre,correo,direccion,ciudad,telefono,tramite) VALUES('".$fecha."','".$rfc."','".$hora."','".$nombre."','".$correo."','".$direccion."','".$ciudad."','".$telefono."','".$tramite."');";
   if ($conexion->query($sql)) {
-    echo "Nuevo registro se inserto  ";
+    echo "Su cita FuE Reservada ";
   }
 }
-?>
+?>  

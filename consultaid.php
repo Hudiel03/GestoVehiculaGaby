@@ -132,6 +132,12 @@ a:hover, a:active {
     <?php } ?>   
 </table>
 </div>
+<div>
+  <div>
+  <center>
 <li><a href="index.html"style background="red";>Pagina Principal</a></li>
+             </center>
+             </div>
+             </div>
 </body>
 </html>
