@@ -22,13 +22,20 @@ h1 {
       color:black;
       font-size:60px;
      }
+     h3 { 
+      text-shadow: 8px 8px 5px red;
+    
+      color:blue;
+      font-size:60px;
+     }
 table {
 /*	background-color: violet ;*/
     color: black;
 	
 	align-self:"center";
     border-collapse: collapse;
-    width: 80%;
+    width: 70%;
+    height: 120px;
 }
 th, td {
     text-align: left;
@@ -71,9 +78,9 @@ a:hover, a:active {
 
 <body  style="background-image: url(assets/img/hero-carousel/gesto3.jpg)" >
 <div class="main-wrapper" style="text-align:center;"  >
-<h1>Editar Registros </h1>
+<h1 background="red">Editar Registros </h1>
 <br><br>
-<table border="1" width="80%" align="center"> 
+<table border="1" width="50%" > 
 <?php
     include 'conexion.php';
     
@@ -85,17 +92,17 @@ a:hover, a:active {
                 
 
              <tr>
-	<th width="30%">id</th>
-	<th width="30%">rfc</th>
-	<th width="30%">fecha</th>
-	<th width="30%">hora</th>
-	<th width="30%">Nombres</th>
-	<th width="30%">correo</th>
-		<th width="30%">direccion</th>
-		<th width="30%">ciudad</th>
-		<th width="30%">tramite</th>
-		<th width="41%">telefono</th>
-		<th width="40%">Opcion</th>
+	<th width="20%">ID</th>
+	<th width="20%">RFC</th>
+	<th width="20%">FECHA</th>
+	<th width="20%">HORA</th>
+	<th width="20%">NOMBRE</th>
+	<th width="20%">CORREO</th>
+		<th width="20%">DIRECCION</th>
+		<th width="20%">CIUDAD</th>
+		<th width="20%">TRAMITE</th>
+		<th width="21%">TELEFONO</th>
+	
 		
 	</tr>
 
@@ -120,18 +127,30 @@ a:hover, a:active {
                     <td><?php echo $row['tramite']?></td>
                     <td><?php echo $row['telefono']?></td>
                   
-                    <td>
+                    <td><br>
                       
-<a class="btn btn-primary" href="editar.php?id=<?php echo $row['id']?>">
-<i class="fa fa-pencil fa-lg" aria-hidden="true">Modificar</i></a>
+
+        </td><br><br>
+        </tr> 
+        
+        <tr>
+
+        <a class="btn btn-primary" href="editar.php?id=<?php echo $row['id']?>">
+<i class="fa fa-pencil fa-lg" aria-hidden="true">ACTUALIZAR</i></a>
 	
 <a class="btn btn-primary" href="eliminar_prod.php?id=<?php echo $row['id']?>">
-<i class="fa fa-pencil fa-lg" aria-hidden="true">Borrar  </i></a>
-        </td>
-        </tr>   
+<i class="fa fa-pencil fa-lg" aria-hidden="true">ELIMINAR</i></a>
+        </tr><br>
+
+
     <?php } ?>   
+
+    
 </table>
+
+
 </div>
+
 <div>
   <div>
   <center>

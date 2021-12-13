@@ -88,48 +88,49 @@ select_id('datos','id',$id);
 
      <div class="row" style="text-align:center;">
      <div class="form-group col-md-6" style="text-align:center;">
-     <input type="text" value="<?php echo $row->id;?>"class="form-control" name="id">
+     <input type="text" value="<?php echo $row->id;?>"class="form-control" id="id" name="id" class="form-control" placeholder="ID" >
      </div>
      <div class="form-group col-md-6" style="text-align:center;">
-     <input type="text" value="<?php echo $row->rfc;?>"class="form-control" name="rfc">
+     <input type="text" value="<?php echo $row->rfc;?>"class="form-control" name="rfc" class="form-control"  placeholder="RFC" >
      </div>
     </div>
+    
 
               <div class="row">
               <div class="form-group col-md-6">
-                <input type="date" value="<?php echo $row->fecha;?>" name="fecha" class="form-control" id="fecha" placeholder="fecha" required>
+                <input type="date" value="<?php echo $row->fecha;?>" name="fecha" class="form-control" id="fecha" placeholder="FECHA" required>
               </div>
 
               <div class="form-group col-md-6">
-                <input type="time" value="<?php echo $row->hora;?>" class="form-control" name="hora" id="hora" placeholder="hora" required>
+                <input type="time" value="<?php echo $row->hora;?>" class="form-control" name="hora" id="hora" placeholder="HORA" required>
               </div>
             </div>
 			<div class="row">
               <div class="form-group col-md-6">
-                <input type="text" value="<?php echo $row->nombre;?>" name="nombre" class="form-control" id="nombre" placeholder="nombre" required>
+                <input type="text" value="<?php echo $row->nombre;?>" name="nombre" class="form-control" id="nombre" placeholder="NOMBRE" required>
               </div>
 
               <div class="form-group col-md-6">
-                <input type="text" value="<?php echo $row->correo;?>" class="form-control" name="correo" id="correo" placeholder="correo" required>
+                <input type="text" value="<?php echo $row->correo;?>" class="form-control" name="correo" id="correo" placeholder="CORREO" required>
               </div>
             </div>
 			<div class="row">
               <div class="form-group col-md-6">
-                <input type="text" value="<?php echo $row->direccion;?>" name="direccion" class="form-control" id="direccion" placeholder="direccion" required>
+                <input type="text" value="<?php echo $row->direccion;?>" name="direccion" class="form-control" id="direccion" placeholder="DIRECCION" required>
               </div>
 
               <div class="form-group col-md-6">
-                <input type="text" value="<?php echo $row->ciudad;?>" class="form-control" name="ciudad" id="ciudad" placeholder="ciuadad" required>
+                <input type="text" value="<?php echo $row->ciudad;?>" class="form-control" name="ciudad" id="ciudad" placeholder="CIUDAD" required>
               </div>
             </div> 
 	      
 			         <div class="row">
               <div class="form-group col-md-6">
-              <input type="text" value="<?php echo $row->telefono;?>" name="telefono" class="form-control" id="telefono" placeholder="telefono" required>
+              <input type="text" value="<?php echo $row->telefono;?>" name="telefono" class="form-control" id="telefono" placeholder="TELEFONO" required>
               </div>
 
               <div class="form-group col-md-6">
-              <input type="text" value="<?php echo $row->tramite;?>" class="form-control" name="tramite" id="tramite" placeholder="tramitea" required>
+              <input type="text" value="<?php echo $row->tramite;?>" class="form-control" name="tramite" id="tramite" placeholder="TRAMITE" required>
               </div>
               </div>
               <div class="text-center">
